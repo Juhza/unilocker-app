@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,900;1,300;1,900&family=Oswald:wght@300;400;500&family=Ubuntu:wght@300;400;500&display=swap');
+
+:root {
+    --darker-green: #1D5902;
+    --lime-green: #87D90D;
+    --smoke-white: #F2F2F2;
+    --tea-green: #84BF2C;
+    --green-green: #28A605;
+    --graphite-black: #222222;
+}
+
+body {
+    font-family: 'Lato', sans-serif !important;
+    margin: 0
+}
+
+.content {
+    width: 100vw;
+    height: 100vh;
+}
+
+.green-background {
+    background-color: var(--tea-green);
+}
+
+.hello-title {
+    color: var(--smoke-white);
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.unilocker-title {
+    font-family: 'Oswald', sans-serif;
+    font-style: italic;
+    font-size: 2.8rem;
+    color: var(--graphite-black);
+    font-weight: 500;
+}
+
+.name-input {
+    background-color: var(--smoke-white);
+    border-width: 0 0 3px 0;
+    border-color: var(--darker-green);
+    padding: 10px 20px;
+    border-radius: 2px;
+    width: 60vw;
+    transition: 0.2s;
+}
+
+.name-input:hover, .name-input:active, .name-input:focus {
+    border-width: 0 0 3px 0;
+    border-color: var(--lime-green);
+    transition: 0.2s;
+}
+
+*:focus {
+    outline: none;
+}
