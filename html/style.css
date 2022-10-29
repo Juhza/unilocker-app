@@ -96,7 +96,7 @@ p {
     margin: 0;
 }
 
-.menu-box .wallet-box .wallet-content > p > span {
+.menu-box .wallet-box .wallet-content > p > span, .menu-box .wallet-box .wallet-title > span {
     color: var(--green-green)
 }
 
@@ -178,4 +178,48 @@ p {
 
 *:focus {
     outline: none;
+}
+
+.go-back-icon a {
+    color: var(--smoke-white);
+    text-decoration: none;
+}
+
+.payment-wallet {
+
+}
+
+.select-locker-box {
+}
+
+.select-locker-box .select-locker-btn {
+    border: 1px solid var(--tea-green);
+    padding: 0 20px;
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.select-locker-box .select-locker-btn > label {
+    margin-left: 1rem;
+    flex-grow: 1;
+    padding: 10px 0;
+}
+
+.payment-continue-box {
+    padding: 0 40px 20px 40px;
+}
+
+.continue-btn {
+    width: 100vw;
+    text-align: center;
+    background-color: var(--green-green);
+}
+
+.continue-btn > a {
+    color: var(--smoke-white);
+    font-size: 1.3rem;
+    padding: 20px;
+    display: block;
+    width: 100vw;
+    text-decoration: none;
 }
