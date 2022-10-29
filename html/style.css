@@ -68,10 +68,6 @@ p {
     margin-bottom: 0;
 }
 
-.menu-box .wallet-box {
-    
-}
-
 .menu-box .wallet-box .wallet-title {
     font-weight: 600;
 }
@@ -185,13 +181,6 @@ p {
     text-decoration: none;
 }
 
-.payment-wallet {
-
-}
-
-.select-locker-box {
-}
-
 .select-locker-box .select-locker-btn {
     border: 1px solid var(--tea-green);
     padding: 0 20px;
@@ -222,4 +211,26 @@ p {
     display: block;
     width: 100vw;
     text-decoration: none;
+}
+
+.history-box {
+    padding: 50px 40px;
+}
+
+.history-box .history-item {
+    display: flex;
+    padding: 15px 0;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+.history-box .history-item:last-child {
+    border-bottom: 0ch;
+}
+
+.history-box .history-item .history-item-name {
+    flex-grow: 1;
+}
+
+.history-box .history-item .history-item-name > span {
+    color: var(--green-green)
 }
