@@ -156,6 +156,26 @@ p {
     transition: 0.2s;
 }
 
+.successful-purchase-box {
+    padding: 0 30px;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.successful-purchase-box h1 {
+    font-size: 3rem;
+    color: var(--smoke-white);
+    margin-bottom: 2rem;
+}
+
+.successful-purchase-box a {
+    color: var(--darker-green);
+}
+
+.successful-purchase-box .qrcode-box {
+    margin-top: 2rem;
+}
+
 *:focus {
     outline: none;
 }
