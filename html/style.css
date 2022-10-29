@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,900;1,300;1,900&family=Oswald:wght@300;400;500&family=Ubuntu:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,900;1,300;1,900&family=Oswald:wght@300;400;500&family=Ubuntu:wght@300;400;500&display=swap');
 
 :root {
     --darker-green: #1D5902;
@@ -7,11 +7,19 @@
     --tea-green: #84BF2C;
     --green-green: #28A605;
     --graphite-black: #222222;
+    --grey: #595959;
 }
 
 body {
     font-family: 'Lato', sans-serif !important;
-    margin: 0
+    font-weight: 400;
+    color: var(--graphite-black);
+    margin: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
 }
 
 .content {
@@ -23,9 +31,105 @@ body {
     background-color: var(--tea-green);
 }
 
-.hello-title {
+.white-background {
+    background-color: var(--smoke-white);
+}
+
+.hello-box {
+    padding: 30px 40px;
+    height: 40vh;
+    display: flex;
+}
+
+.hello-box .settings-icon {
+    color: var(--smoke-white)
+}
+
+.hello-box .hello-title {
     color: var(--smoke-white);
     font-family: 'Ubuntu', sans-serif;
+    font-size: 2.3rem;
+    font-weight: 300;
+}
+
+.hello-box .hello-title span {
+    font-weight: 500;
+}
+
+.menu-box {
+    padding: 50px 40px;
+}
+
+.menu-box > div {
+    margin-bottom: 4rem;
+}
+
+.menu-box > div:last-child {
+    margin-bottom: 0;
+}
+
+.menu-box .wallet-box {
+    
+}
+
+.menu-box .wallet-box .wallet-title {
+    font-weight: 600;
+}
+
+.menu-box .wallet-box .wallet-content {
+    font-size: 2.4rem;
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+}
+
+.menu-box .wallet-box .wallet-content > a {
+    font-size: 1rem;
+    display: flex;
+    justify-content: end;
+    flex-grow: 1;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+    color: var(--lime-green);
+}
+
+.menu-box .wallet-box .wallet-content > p {
+    margin: 0;
+}
+
+.menu-box .wallet-box .wallet-content > p > span {
+    color: var(--green-green)
+}
+
+.menu-box .menu-items {
+    display: flex;
+}
+
+.menu-box .menu-items .menu-item-btn {
+    margin-right: 2rem;
+    border: 1px solid var(--grey);
+    border-radius: 2px;
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex: 1;
+    padding: 10px 20px
+}
+
+.menu-box .menu-items .menu-item-btn > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.menu-box .menu-items .menu-item-btn:last-child {
+    margin-right: 0;
+}
+
+.menu-box .menu-items .menu-item-btn .menu-item-icon {
+    color: var(--lime-green);
 }
 
 .unilocker-title {
