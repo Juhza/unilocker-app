@@ -15,7 +15,7 @@ export function Login() {
         if (event.target[0].value.length > 1) {
             createNewUser(event.target[0].value)
             localStorage.setItem("name", JSON.stringify(event.target[0].value))
-            return navigate("/menu")
+            return navigate("/loading")
         }
 
         return alert('Insira um nome valido')
