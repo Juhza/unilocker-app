@@ -1,0 +1,138 @@
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    width: 100vw;
+    height: 100vh;
+}
+
+.green-background {
+    background-color: var(--tea-green);
+}
+
+.white-background {
+    background-color: var(--smoke-white);
+}
+
+.hello-box {
+    padding: 30px 40px;
+    height: 40vh;
+    display: flex;
+}
+
+.hello-box .settings-icon {
+    color: var(--smoke-white)
+}
+
+.hello-box .hello-title {
+    color: var(--smoke-white);
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.3rem;
+    font-weight: 300;
+}
+
+.hello-box .hello-title span {
+    font-weight: 500;
+}
+
+.menu-box {
+    padding: 50px 40px;
+}
+
+.menu-box>div {
+    margin-bottom: 4rem;
+}
+
+.menu-box>div:last-child {
+    margin-bottom: 0;
+}
+
+
+.menu-box .wallet-box .wallet-title {
+    font-weight: 600;
+}
+
+.menu-box .wallet-box .wallet-content {
+    font-size: 2.4rem;
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+}
+
+.menu-box .wallet-box .wallet-content>a {
+    font-size: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+    color: var(--lime-green);
+}
+
+.menu-box .wallet-box .wallet-content>p {
+    margin: 0;
+}
+
+.menu-box .wallet-box .wallet-content>p>span {
+    color: var(--green-green)
+}
+
+.menu-box .menu-items {
+    display: flex;
+}
+
+.menu-box .menu-items .menu-item-btn {
+    font-weight: 300;
+    margin-right: 2rem;
+    border: 1px solid var(--grey);
+    border-radius: 2px;
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex: 1;
+    padding: 10px 20px
+}
+
+.menu-box .menu-items .menu-item-btn>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.menu-box .menu-items .menu-item-btn:last-child {
+    margin-right: 0;
+}
+
+.menu-box .menu-items .menu-item-btn .menu-item-icon {
+    color: var(--lime-green);
+}
+
+.unilocker-title {
+    font-family: 'Oswald', sans-serif;
+    font-style: italic;
+    font-size: 2.8rem;
+    color: var(--graphite-black);
+    font-weight: 500;
+}
+
+.name-input {
+    background-color: var(--smoke-white);
+    border-width: 0 0 3px 0;
+    border-color: var(--darker-green);
+    padding: 10px 20px;
+    border-radius: 2px;
+    width: 60vw;
+    transition: 0.2s;
+}
+
+.name-input:hover,
+.name-input:active,
+.name-input:focus {
+    border-width: 0 0 3px 0;
+    border-color: var(--lime-green);
+    transition: 0.2s;
+}

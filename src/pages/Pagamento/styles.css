@@ -1,22 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,900;1,300;1,900&family=Oswald:wght@300;400;500&family=Ubuntu:wght@300;400;500&display=swap');
-
-:root {
-    --darker-green: #1D5902;
-    --lime-green: #87D90D;
-    --smoke-white: #F2F2F2;
-    --tea-green: #84BF2C;
-    --green-green: #28A605;
-    --graphite-black: #222222;
-    --grey: #595959;
-}
-
-body {
-    font-family: 'Lato', sans-serif !important;
-    font-weight: 400;
-    color: var(--graphite-black);
-    margin: 0;
-}
-
 p {
     margin: 0;
     padding: 0;
@@ -60,13 +41,15 @@ p {
     padding: 50px 40px;
 }
 
-.menu-box > div {
+.menu-box>div {
     margin-bottom: 4rem;
 }
 
-.menu-box > div:last-child {
+.menu-box>div:last-child {
     margin-bottom: 0;
 }
+
+.menu-box .wallet-box {}
 
 .menu-box .wallet-box .wallet-title {
     font-weight: 600;
@@ -78,7 +61,7 @@ p {
     display: flex;
 }
 
-.menu-box .wallet-box .wallet-content > a {
+.menu-box .wallet-box .wallet-content>a {
     font-size: 1rem;
     display: flex;
     justify-content: end;
@@ -88,11 +71,11 @@ p {
     color: var(--lime-green);
 }
 
-.menu-box .wallet-box .wallet-content > p {
+.menu-box .wallet-box .wallet-content>p {
     margin: 0;
 }
 
-.menu-box .wallet-box .wallet-content > p > span, .menu-box .wallet-box .wallet-title > span {
+.menu-box .wallet-box .wallet-content>p>span {
     color: var(--green-green)
 }
 
@@ -111,7 +94,7 @@ p {
     padding: 10px 20px
 }
 
-.menu-box .menu-items .menu-item-btn > div {
+.menu-box .menu-items .menu-item-btn>div {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -146,7 +129,9 @@ p {
     transition: 0.2s;
 }
 
-.name-input:hover, .name-input:active, .name-input:focus {
+.name-input:hover,
+.name-input:active,
+.name-input:focus {
     border-width: 0 0 3px 0;
     border-color: var(--lime-green);
     transition: 0.2s;
@@ -170,67 +155,4 @@ p {
 
 .successful-purchase-box .qrcode-box {
     margin-top: 2rem;
-}
-
-*:focus {
-    outline: none;
-}
-
-.go-back-icon a {
-    color: var(--smoke-white);
-    text-decoration: none;
-}
-
-.select-locker-box .select-locker-btn {
-    border: 1px solid var(--tea-green);
-    padding: 0 20px;
-    display: flex;
-    margin-bottom: 5px;
-}
-
-.select-locker-box .select-locker-btn > label {
-    margin-left: 1rem;
-    flex-grow: 1;
-    padding: 10px 0;
-}
-
-.payment-continue-box {
-    padding: 0 40px 20px 40px;
-}
-
-.continue-btn {
-    width: 100vw;
-    text-align: center;
-    background-color: var(--green-green);
-}
-
-.continue-btn > a {
-    color: var(--smoke-white);
-    font-size: 1.3rem;
-    padding: 20px;
-    display: block;
-    width: 100vw;
-    text-decoration: none;
-}
-
-.history-box {
-    padding: 50px 40px;
-}
-
-.history-box .history-item {
-    display: flex;
-    padding: 15px 0;
-    border-bottom: 1px solid #d3d3d3;
-}
-
-.history-box .history-item:last-child {
-    border-bottom: 0ch;
-}
-
-.history-box .history-item .history-item-name {
-    flex-grow: 1;
-}
-
-.history-box .history-item .history-item-name > span {
-    color: var(--green-green)
 }
