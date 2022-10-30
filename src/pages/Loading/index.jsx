@@ -1,24 +1,20 @@
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom"
 
 export function Loading() {
-    const [firstTime, setFirstTime] = useState(false)
+
     const navigate = useNavigate()
 
     useEffect(() => {
-        if (!firstTime) {
-            console.log("logou")
-            setFirstTime(false)
-            setInterval(() => {
-                navigate("/menu");
-            }, 5000)
-        }
-    }, [firstTime])
+        setTimeout(() => {
+            navigate("/menu");
+        }, 5000)
+    }, [])
     return (
         <>
             <div className="content flex flex-col justify-center align-items  green-background">
                 <div className='flex flex-row items-center gap-1 justify-center mb-5'>
-                    <h1 className='unilocker-title'>Carregando...</h1>
+                    <h1 className='unilocker-title'>UNILOCKER</h1>
                 </div>
                 <div className="flex justify-center items-center flex-col mb-5">
 

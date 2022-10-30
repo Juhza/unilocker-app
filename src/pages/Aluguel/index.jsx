@@ -50,7 +50,7 @@ export function Aluguel() {
                     </div>
                 </div>
                 <div class="continue-btn">
-                    <a href="tela-qrcode.html">
+                    <a onClick={() => { navigate("/pagamento") }}>
                         Continuar
                     </a>
                 </div>

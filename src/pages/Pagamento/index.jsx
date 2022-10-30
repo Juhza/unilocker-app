@@ -1,7 +1,9 @@
 import './styles.css'
 import qrcode from '../../assets/qrcode.svg'
+import { useNavigate } from 'react-router-dom'
 
 export function Pagamento() {
+    const navigate = useNavigate()
     return (
         <div className="content green-background flex items-center justify-center">
             <div className="d-flex flex-column successful-purchase-box">
@@ -17,7 +19,7 @@ export function Pagamento() {
                 <div className="qrcode-box max-w-[900]">
                     <img src={qrcode} />
                 </div>
-                <a href="#" className='underline'>
+                <a onClick={() => navigate("/menu")} className='underline'>
                     Voltar
                 </a>
             </div>
